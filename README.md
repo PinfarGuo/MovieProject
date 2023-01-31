@@ -21,9 +21,10 @@ Out of the list of top stars I then narrow down to my favorite stars.
 ```sql
 SELECT star, gross, name, genre, year
 FROM MoviesProject..movies$
-WHERE star IN ('Robert Downey Jr.','Tom Cruise','Will Smith','Johnny Depp','Vin Diesel','Dwayne Johnson','Bruce Willis',
-				'Adam Sandler','Brad Pitt','Channing Tatum','Chris Hemsworth','Chris Pratt','Denzel Washington','Donnie Yen',
-				'Jackie Chan','Julia Roberts','Keanu Reeves','Liam Neeson','Mark Wahlberg','Matt Damon','Ryan Reynolds')
+WHERE star IN ('Robert Downey Jr.','Tom Cruise','Will Smith','Johnny Depp','Vin Diesel','Dwayne Johnson',
+		'Bruce Willis','Adam Sandler','Brad Pitt','Channing Tatum','Chris Hemsworth','Chris Pratt',
+		'Denzel Washington','Donnie Yen','Jackie Chan','Julia Roberts','Keanu Reeves','Liam Neeson',
+		'Mark Wahlberg','Matt Damon','Ryan Reynolds')
 ORDER BY star, year DESC, gross DESC
 ;
 ```
